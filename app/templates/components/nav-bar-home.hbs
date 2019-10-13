@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-md navbar-light bg-white  ">
+
+    <a class="navbar-brand" href="#">Brish Gas</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar  w-50 order-1 dual-collapse2">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="dropdown">
+                <a class="dropdown-toggle">{{#link-to 'home-services'}} Home Services {{/link-to}} </a>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <a>
+                            {{#link-to 'home-services'}}toto{{/link-to}}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+            <li class=" dropdown">
+                <a class="dropdown-toggle " data-toggle="dropdown">
+                    {{#link-to 'smart-home'}} Smart Homes{{/link-to}}
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li >
+                        <a >
+                            {{#link-to 'smart-home.technology'}}What is a smart home{{/link-to}}
+                        </a>
+                    </li>
+                    <li >
+                        <a class="dropdown-item">
+                            {{#link-to 'smart-home.control'}}Controlling your smart home{{/link-to}}
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item">
+                            {{#link-to 'smart-home.loooking-after-your-home'}}Looking after your
+                            home{{/link-to}}
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+
+
+
+        </ul>
+    </div>
+
+
+</nav>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            {{outlet}}
+        </div>
+
+    </div>
+
+
+</div><!-- /.container -->

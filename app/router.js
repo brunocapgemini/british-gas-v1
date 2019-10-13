@@ -7,6 +7,20 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  
+  this.route('business');
+  this.route('home-services', function() {
+    this.route('boilers-and-heating', function() {
+      this.route('boiler-and-heating-cover');
+    });
+  });
+  this.route('smart-home', function() {
+    this.route('technology');
+    this.route('control');
+    this.route('looking-after-your-home');
+    this.route('hive-heating');
+    this.route('smart-meters');
+  });
 });
 
 export default Router;
